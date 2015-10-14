@@ -1,0 +1,132 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+
+main{
+  @include outer-container;
+}
+
+header{
+  @include outer-container;
+  width: 100%;
+  height: 35px;
+  background: #e1e1e1;
+  position: relative;
+  .logo{
+    @include span-columns(3);
+    margin: 0;
+    height:35px;
+    text-align: center;
+    padding: 8px;
+  }
+  a{
+    @include span-columns(3);
+    margin: 0;
+    height: 35px;
+    position: relative;
+    right:0;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+
+  }
+}
+
+.hero{
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  height: 202px;
+  @include span-columns(12) ;
+  margin-bottom: 50px;
+}
+
+.plan{
+  @include span-columns(11);
+  @include shift(.5);
+  background: dodgerblue;
+  text-align: center;
+  margin-bottom: 35px;
+  border: 2px black solid;
+
+}
+
+.plan .personal{
+  background: #519251;
+}
+
+.plan .business{
+  background: #2C4984;
+}
+
+.plan .enterprise{
+  background: #111111;
+}
+
+.planType{
+  @include span-columns(11);
+  height: 222px;
+  width: 100%;
+  padding-top: 20px;
+
+  h1{
+    color: #fff;
+    font-size: 72px;
+    margin: 25px;
+  }
+  h2{
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  h3{
+    color:#fff;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.planFeatures{
+  @include span-columns(11);
+  background: #E5E5E5;
+  height: 270px;
+  width: 100%;
+  position: relative;
+  p{
+    text-align: center;
+    border-top: 2px black solid;
+    height: 14.28%;
+    margin: 0;
+    padding-top: 7px;
+
+  }
+}
+
+.planChoose{
+  @include span-columns(11);
+  display: block;
+  background: yellow;
+  height: 89px;
+}
+
+.action{
+  @include span-columns(8);
+  @include shift;
+}
+
+footer{
+
+  @include span-columns(12);
+  height: 100px;
+  background: black;
+  color: white;
+  padding-top: 30px;
+
+  span{
+    @include span-columns (10);
+    @include shift (1);
+    text-align: center;
+
+  }
+}

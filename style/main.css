@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  background: green; }
+
+main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.hero {
+  width: 100%;
+  background: blue;
+  height: 202px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .hero:last-child {
+    margin-right: 0; }
+
+.plan {
+  width: 100%;
+  background-color: red;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .plan:last-child {
+    margin-right: 0; }

@@ -1,0 +1,25 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+body{
+
+  background: green;
+}
+
+main{
+  @include outer-container;
+}
+
+
+.hero{
+  width: 100%;
+  background: blue;
+  height: 202px;
+  @include span-columns(12);
+}
+
+.plan{
+  width: 100%;
+  background-color: red;
+  @include span-columns(10);
+}

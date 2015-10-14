@@ -1,0 +1,22 @@
+{
+  "name": "Week_2_Wed_HW",
+  "version": "0.0.0",
+  "authors": [
+    "Taylor Preston <taylor.preston.music@gmail.com>"
+  ],
+  "description": "Wed Week 2 homework",
+  "main": "Week_2_Wed_hw",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2"
+  }
+}
