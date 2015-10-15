@@ -6,9 +6,6 @@ html {
 *::before {
   box-sizing: inherit; }
 
-* {
-  font-family: "Helvetica"; }
-
 main {
   max-width: 68em;
   margin-left: auto;
@@ -30,29 +27,17 @@ header {
     clear: both;
     content: "";
     display: table; }
-  header .logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    margin: 0;
-    height: 35px;
-    text-align: center;
-    padding: 8px;
-    margin-left: 4.2649%; }
-    header .logo:last-child {
-      margin-right: 0; }
   header a {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
+    margin-left: 8.5298%;
     margin: 0;
     height: 35px;
-    position: relative;
-    right: 0;
     text-align: center;
     padding: 8px;
+    padding-right: 10px;
     text-decoration: none;
     color: black; }
     header a:last-child {
@@ -217,3 +202,135 @@ footer {
     margin-left: 17.05961%; }
     footer span:last-child {
       margin-right: 0; } }
+
+@media (min-width: 767px) {
+  main {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    main::after {
+      clear: both;
+      content: "";
+      display: table; }
+  header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 10.43705%; }
+    header .logo:last-child {
+      margin-right: 0; }
+  header a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 10.43705%; }
+    header a:last-child {
+      margin-right: 0; }
+  .hero {
+    height: 300px;
+    padding-top: 60px; }
+    .hero .heroText {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .hero .heroText:last-child {
+        margin-right: 0; }
+  .plan {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin: 5px; }
+    .plan:last-child {
+      margin-right: 0; }
+  .action {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 0; }
+    .action:last-child {
+      margin-right: 0; }
+  .actionFeature {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 4.2649%; }
+    .actionFeature:last-child {
+      margin-right: 0; }
+    .actionFeature:nth-child(2n) {
+      margin-right: 0; }
+    .actionFeature:nth-child(2n+1) {
+      clear: left; } }
+
+@media (min-width: 978px) {
+  main {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    main::after {
+      clear: both;
+      content: "";
+      display: table; }
+  header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%; }
+    header .logo:last-child {
+      margin-right: 0; }
+  header a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%; }
+    header a:last-child {
+      margin-right: 0; }
+  .hero {
+    height: 300px;
+    padding-top: 60px; }
+    .hero .heroText {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .hero .heroText:last-child {
+        margin-right: 0; }
+  .allplans {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .allplans:last-child {
+      margin-right: 0; }
+  .plan {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin: 5px; }
+    .plan:last-child {
+      margin-right: 0; }
+  .action {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin: 0; }
+    .action:last-child {
+      margin-right: 0; }
+  .actionFeature {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 17.05961%; }
+    .actionFeature:last-child {
+      margin-right: 0; }
+    .actionFeature:nth-child(2n) {
+      margin-right: 0; }
+    .actionFeature:nth-child(2n+1) {
+      clear: left; } }

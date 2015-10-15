@@ -2,9 +2,6 @@
 @import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
 
 
-*{
-  font-family: "Helvetica";
-}
 
 main{
   @include outer-container;
@@ -16,22 +13,14 @@ header{
   height: 35px;
   background: #e1e1e1;
   position: relative;
-  .logo{
-    @include span-columns(3);
-    margin: 0;
-    height:35px;
-    text-align: center;
-    padding: 8px;
-    @include shift(.5);
-  }
   a{
     @include span-columns(3);
+    @include shift(1);
     margin: 0;
     height: 35px;
-    position: relative;
-    right:0;
     text-align: center;
     padding: 8px;
+    padding-right: 10px;
     text-decoration: none;
     color: black;
 
@@ -45,7 +34,6 @@ header{
   padding-top: 70px;
   color: white;
   text-align: center;
-
 }
 
 .hero{
@@ -62,7 +50,6 @@ header{
   text-align: center;
   margin-bottom: 35px;
   border: 2px black solid;
-
 }
 
 .plan .personal{
@@ -126,7 +113,7 @@ header{
 
 .action{
   @include span-columns(8);
-  @include shift;
+  @include shift(1);
 }
 
 footer{
@@ -170,11 +157,88 @@ footer{
       }
     }
 }
-//
-// @media (min-width 767px){
-//
-// }
-//
-// @media (min-width 978px) {
-//
-// }
+
+@media (min-width: 767px){
+
+  main{
+    @include outer-container;
+  }
+
+  header{
+    .logo{
+      @include span-columns(1.5);
+    }
+    a{
+      @include span-columns(1.5);
+    }
+  }
+
+  .hero{
+    height: 300px;
+    padding-top: 60px;
+    .heroText{
+      @include span-columns(10);
+    }
+  }
+
+
+  .plan{
+    @include span-columns(4);
+      margin: 5px;
+  }
+
+  .action{
+    @include span-columns(12);
+    margin:0;
+  }
+  .actionFeature{
+    @include span-columns(5);
+    @include omega(2n);
+    @include shift(.5);
+  }
+
+}
+
+@media (min-width: 978px) {
+
+    main{
+      @include outer-container;
+    }
+
+    header{
+      .logo{
+        @include span-columns(1);
+      }
+      a{
+        @include span-columns(1);
+      }
+    }
+
+    .hero{
+      height: 300px;
+      padding-top: 60px;
+      .heroText{
+        @include span-columns(10);
+      }
+    }
+
+    .allplans{
+      @include span-columns(10);
+      @include shift (1);
+    }
+
+    .plan{
+      @include span-columns(4);
+        margin: 5px;
+    }
+
+    .action{
+      @include span-columns(10);
+      margin:0;
+    }
+    .actionFeature{
+      @include span-columns(4);
+      @include omega(2n);
+      @include shift(2);
+    }
+}
